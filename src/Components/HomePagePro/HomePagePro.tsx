@@ -8,6 +8,7 @@ import vec3 from '../../assets/cart logo/Vector (5).png';
 import vec4 from '../../assets/cart logo/Vector (6).png';
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { TbTruckDelivery } from "react-icons/tb";
 
 const HomePagePro = () => {
     return (
@@ -59,7 +60,7 @@ const HomePagePro = () => {
                     </div>
                     <div className='hover-details-option'>
                         <p>Chose Option</p>
-                        <p>30 min</p>
+                        <p className='deli-opt'><TbTruckDelivery className='deli-icon'/> 30 min</p>
                     </div>
                 </div>
 
