@@ -1,0 +1,135 @@
+.sliderAfterNav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+    /* gap: 10px; */
+}
+
+.slider-left{
+    width: 70vw;
+    /* height: 30vh; */
+}
+
+
+/************  second ***************/
+.slider-second-sec{
+    position: relative;
+}
+
+.slider-text-content{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    color: white;
+}
+
+.slider-text-content h1{
+    /* font-family: 'Roboto'; */
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+
+
+
+.slider-text-content h2{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 20px 0;
+}
+
+.slider-text-content h4{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 0 0;
+}
+
+.SliderImg{
+    width: 100%;
+    height: 50vh;
+}
+
+.Slider-right img{
+    width: 20vw;
+    height: 50vh;
+}
+
+
+/* For Tablet */
+@media screen and (min-width:689px) and (max-width:992px) {
+
+    .sliderAfterNav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-left{
+        width: 95vw;
+    }
+
+    .slider-text-content h1{
+        font-size: 25px;
+    }
+    .slider-text-content h2{
+        font-size: 40px;
+    }
+    .slider-text-content h4{
+        font-size: 25px;
+    }
+
+
+    .SliderImg{
+        height: 30vh;
+    }
+
+    .Slider-right{
+        display: none;
+    }
+}
+
+
+/* For Mobile  */
+@media screen and (max-width:688px) {
+
+    .sliderAfterNav{
+        display: flex;
+        justify-content: center;
+    }
+
+  
+
+    .slider-left{
+        width: 95vw;
+    }
+
+    .slider-text-content{
+        margin-top: 10px;
+    }
+
+     .slider-text-content h1{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+    .slider-text-content h2{
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+    .slider-text-content h4{
+        font-size: 15px;
+    }
+
+    .SliderImg{
+        height: 40vh;
+    }
+
+    .Slider-right{
+        display: none;
+    }
+ 
+    .slider-text-content{
+             top: 10px;
+            left: 30px;
+        }
+
+}

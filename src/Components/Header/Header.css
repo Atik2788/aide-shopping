@@ -1,0 +1,144 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    height: 40px;    
+    background: #00AF9E;
+}
+
+.header-Icon{
+    display: none;
+}
+
+.header-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 15px;
+    /* padding-right: 16px; */
+    /* identical to box height */
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+
+    color: #FFFFFF;
+}
+
+.header-text p{
+    /* padding-left: 16px; */
+    padding-right: 16px;
+}
+
+.english-arrow{
+    padding-left: 6px;
+}
+
+
+/* Drop Down ********************************** */
+.english-bengali-container{
+    position: relative;
+}
+
+.english-bengali-content{
+    position: absolute;
+    text-align: left;
+    top: 10px;
+    left: -20px;
+    background-color: rgb(243, 242, 242);
+    border-radius: 5px;
+    display: none;
+}
+
+.english-bengali-content li{
+    display: block;
+    color: black;
+    padding: 5px 30px 5px 10px ;
+    /* padding: 0 10px; */
+}
+
+.english-bengali-content li:hover{
+    background-color: rgba(209, 209, 209, 0.474);
+    font-weight: bold;
+}
+
+.english-bengali-container:hover .english-bengali-content{
+    display: block;
+}
+
+
+
+/***********  For Tablet   ******************/
+@media screen and (min-width:668px) and (max-width:992px) {
+    
+    .navbar{
+        padding: 0 30px;
+        height: 85px;
+    }    
+
+
+    .nav-location{
+        /* display: none; */
+    }
+
+    .nav-info-icon-red{
+        top: 93px;
+        right: 155px;
+    }
+    
+}
+
+
+/*********  For Tablet  *************/
+@media screen and (max-width:688px){
+
+.header{
+    padding: 10px 10px;
+    height: 30px;
+     
+}
+
+.header-Icon{
+    display: flex;
+    /* padding-top: 10px; */
+    width: 60px;
+    position: relative;
+}
+
+.header-Icon img{
+    width: 30px;
+    height: 20px;
+}
+
+.nav-icon-hover{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    padding: 0;
+    background-color: white;
+    z-index: 20;
+}
+
+.nav-icon-hover-p{
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 12px;
+}
+
+.header-Icon:hover .nav-icon-hover{
+    display: flex;
+}
+
+.nav-icon-hover p:hover{
+    background-color: #e2e2e2;
+}
+
+.header-text-mobile-hide{
+    display: none;
+}
+
+}
