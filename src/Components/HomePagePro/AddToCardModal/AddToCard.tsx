@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './AddToCard.css'
 import tic from '../../../assets/tic.svg'
 import imgBottle from '../../../assets/pro/Image (1).png'
 
 const AddToCard = () => {
+
+    const [quantity, setQuantity] = useState(1)
+
     return (
         <div id="popup1" className="overlay">
             <div className="popup">
@@ -47,9 +50,24 @@ const AddToCard = () => {
                                 <p className='off-price pro-price-fon-hover font-14-12'>-58%</p>                    
                                 <p className='pro-litter'>5 Liter</p>
                             </div>
-                            <div className='counter-sec'>
 
+
+                            <div className='counter-sec'>                                    
+                                <p className='counter-sec-p1'>
+                                    {
+                                        quantity === 1 ?
+                                            <button className="counter-btn">-</button>
+                                            :
+                                            <button className="counter-btn" onClick={() => setQuantity(quantity - 1)}>-</button>
+                                    }
+                                    <span className="">{quantity}</span>
+                                    <button className="counter-btn" onClick={() => setQuantity(quantity + 1)}>+</button>
+                                </p>
+
+                                <p className='counter-sec-p2'>Explore more details</p>
                             </div>
+
+
                         </div>
 
 
