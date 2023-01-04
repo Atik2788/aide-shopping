@@ -1,5 +1,5 @@
 .home-pro-sec{
-    margin: 5rem 40px;
+    margin: 5rem 20px;
 }
 
 .home-pro-sec h3{
@@ -10,17 +10,19 @@
 .products-div{
     display: grid;
     grid-template-columns: repeat(5, 1fr);    
-    gap: 2rem;
+    gap: 5px;
 }
 
 .product{
-    box-shadow: 1px 11px 30px -20px grey;
+    background: #FFFFFF;
+    border: 1px solid #E2E2E2;
     border-radius: 8px;
-    padding: 10px;
+
+    padding: 5px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    /* transition: .5s; */
+    height: 290px;
 }
 
 .product:hover{
@@ -36,8 +38,8 @@
     margin: 0 auto;
     display: flex;
     position: relative;
-    width: 70%;
-    height: 70%;
+    width: 35%;
+    height: 35%;
     justify-content: center;
     transition: transform 0.5s ease-out;
 }
@@ -47,30 +49,67 @@
     height: 40%;
     transition: 0.5s;
     position: relative;
-
-    transform: translate(-60px, 0px);
+    transform: translate(-60px, 10px);
 }
 
 /**************************/
 .pro-details{
-    padding: 0 1rem;
+    padding: 0 5px;
     transition: 0.5s;
     height: 80px;
     position: relative;
-    transition: transform 0.5s ease-out ;
+    transition:  0.5s ease-out ;
 }
 
-.product:hover .pro-details{
-    width: 150px;
-    transform: translate(60px, -100px);
+.product:hover .pro-details {
+    width: 120px;
+    transform: translate(40px, -90px);
 }
 
-/**************************/
+.product:hover .pro-title{
+    font-size: .7em;
+    padding: 10px 0;
+}
+
+
+/****************************/
+
+.pro-title{
+    margin: 1rem 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+}
+
+.product:hover .pro-title{
+    width: 70px;
+    margin: 0;
+    display: block;
+    transition: 1s;
+    width: 100%;
+}
+
+
+.pro-litter{
+    margin:0 0 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+
+/***********************************/
+/********  Product Pice Sec  *******/
 .pro-price-sec{
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding: 0 1rem 1rem 1rem;
+    margin:  10px 0;
     transition: transform 0.5s ease-out ;
 }
 
@@ -80,8 +119,62 @@
     gap: 3px;
 }
 
+.pro-current-price{
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #009999;
+    margin: 0;   
+    padding-right: 15px; 
+}
+
+.font-14-12{
+    font-size: 12px;
+}
+
+.product:hover .font-14-12{
+    font-size: 12px;
+}
+
+.pro-prev-price{
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #a8adad;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.pro-cross{
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 9px;
+    left: 65px;
+    background-color: #cacece;
+}
+
+.off-price{
+    margin: 0;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 12px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FF0000;
+    background-color: #fed3d3;
+}
+
+
 .product:hover .pro-price-sec{
-    transform: translate(-5px, -70px);
+    transform: translate(-0px, -75px);
+}
+
+.product:hover .pro-price-fon-hover{
+    font-size: 10px;
 }
 
 
@@ -96,23 +189,23 @@
 }
 
 .product-delivery-side-div p{
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
     margin: 0;
 }
 
-
-
 .product:hover .product-delivery-side{
     display: flex;
     flex-direction: column;
-     top: 20px;
-     right: 15px;
+     top: 10px;
+     right: 10px;
      transition: 0.5s;
 }
 
 .product-delivery-side-div p:hover{
-    background-color: rgb(217, 217, 217);
+    background-color: #009999;
+    color: white;
+    border-radius: 20px;
 }
 
 .shopping-icon{
@@ -120,98 +213,109 @@
     font-size: 18px;
 }
 
-/****************************/
-/****************************/
-
-.pro-title{
-    margin: 1rem 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #212121;
-
+/*********/
+.add-to-fav{
+    position: relative;
 }
 
-.product:hover .pro-title{
-    width: 70px;
-    margin: 0;
-    display: block;
-    transition: 1s;
-    width: 100%;
-}
-
-
-.pro-litter{
-    margin:0 0 1rem 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #828282;
-}
-
-
-.pro-current-price{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    color: #009999;
-    margin: 0;    
-}
-
-.pro-prev-price{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    color: #a8adad;
-    margin: 0;
-    padding-right: 20px;
-}
-
-.pro-cross{
+.add-to-fav{
     position: absolute;
-    width: 60px;
-    height: 1px;
-    top: 10px;
-    left: 60px;
-    background-color: #cacece;
-}
-
-.off-price{
-    margin: 0;
-    padding: 3px 5px;
-    border-radius: 5px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
+    width: 80px;
+    top: 4px;
+    background-color: #009999;
+    color: white;
+    right: 40px;
+    font-size: 10px;
     text-align: center;
+    padding: 1px 5px;
+    display: none;
+}
 
-    color: #FF0000;
-    background-color: #fed3d3;
+.deli-icon1:hover .add-to-fav{
+    display: block;
+}
+
+/*************/
+.deli-icon2{
+    position: relative;
+}
+
+.schedule-shopping{
+    position: absolute;
+    width: 90px;
+    top: 4px;
+    background-color: #009999;
+    color: white;
+    right: 40px;
+    font-size: 10px;
+    text-align: center;
+    padding: 1px 5px;
+    display: none;
+}
+
+.deli-icon2:hover .schedule-shopping{
+    display: block;
+}
+
+/**************/
+.deli-icon3{
+    position: relative;
+}
+
+.add-to-gift{
+    position: absolute;
+    width: 80px;
+    top: 4px;
+    background-color: #009999;
+    color: white;
+    right: 40px;
+    font-size: 10px;
+    text-align: center;
+    padding: 1px 5px;
+    display: none;
+}
+
+.deli-icon3:hover .add-to-gift{
+    display: block;
 }
 
 
-/******************************/
+/****************/
+.deli-icon4{
+    position: relative;
+}
+
+.add-to-cart{
+    position: absolute;
+    width: 70px;
+    top: 4px;
+    background-color: #009999;
+    color: white;
+    right: 40px;
+    font-size: 10px;
+    text-align: center;
+    padding: 1px 5px;
+    display: none;
+}
+
+.deli-icon4:hover .add-to-cart{
+    display: block;
+}
+
+
+/******    Hover Details   **********/
+/************************************/
 .hover-details{
     position: absolute;
-    top: 440px;
+    top: 450px;
     right: 0px;
+    padding: 0 5px;
     transition: 0.5s;
 }
 
 .product:hover .hover-details{
-    top: 220px;
-    right: 15px;
+    top: 135px;
+    left: 5px;
     transition: 0.5s;
 }
 
@@ -223,6 +327,8 @@
     margin: 6px 0;
 }
 
+
+/************************************/
 .hover-details-option{
     font-family: 'Roboto Condensed';
     font-style: normal;
@@ -234,20 +340,111 @@
     justify-content: space-between;
 }
 
+.choose-opt {
+    position: relative;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.choose-opt:hover{
+    background-color: #e9ebeb;
+}
+
+.choose-img{
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+.choose-text{
+    padding-left: 15px;
+}
 
 .deli-opt{
-    
+    position: relative;
+    padding: 5px 5px;
 }
 
 .deli-icon{
-    padding-top: px;
+    position: absolute;
+    top: -1px;
+    padding: 5px 0px;
+    left: -10px;
+    font-size: 15px;
 }
 
 
+/******** View part/ last part   ********/
+/****************************************/
+.view-all-sec{
+    position: absolute;
+    width: 90%;
+    bottom: -100px;
+    transition: .5s;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+.product:hover .view-all-sec{
+    bottom: 0;
+}
+
+.divider{
+    height: 1px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #787676;
+}
+
+.view-all{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.view-details{
+    display: flex;
+    align-items: center;
+    color: #787676;
+}
 
 
-/**************************/
+.view-details p{
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-bottom: 0;
 
+}
+
+.view-details:hover{
+    color: #009999;
+}
+
+.view-question-mark{
+    color: red;
+    padding-right: 0px;
+}
+
+.view-question{
+    display: flex;
+    color: #787676;
+}
+
+.view-question p{
+    font-weight: 400;
+    font-size: 12px;
+
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.view-question:hover{
+    color: #009999;
+}
+
+
+/**********   Responsive  ****************/
 @media screen and (min-width:668px) and (max-width:992px) {
     .products-div{
         grid-template-columns: repeat(3, 1fr);    
@@ -255,9 +452,17 @@
     }
 }
 
+@media screen and (min-width:992px) and (max-width:1180px) {
+    .products-div{
+        grid-template-columns: repeat(4, 1fr);    
+
+    }
+}
+
+
+/******* Mobile ********/
 @media screen and (max-width:688px){
     .products-div{
         grid-template-columns: repeat(1, 1fr);    
-        /* height: 7000px; */
     }
 }

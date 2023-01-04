@@ -22,17 +22,17 @@ const Header = () => {
         </div>
 
       <div className="header-text header-text-mobile-hide">
-        <p>Open Sponsorship</p>
-        <p>Call Center</p>
-        <p>Help</p>
-        <p>Tutorial</p>
+        <p className="margin-bottom-zero">Opens Sponsorship</p>
+        <p className="margin-bottom-zero">Call Center</p>
+        <p className="margin-bottom-zero">Help</p>
+        <p className="margin-bottom-zero">Tutorial</p>
       </div>
 
       <div className="header-text ">
-        <p>Be Partner</p>
+        <p className="margin-bottom-zero">Be Partner</p>
 
         <div className="header-text">
-          <p>English</p>
+          <p className="margin-bottom-zero">English</p>
 
           <div className="english-bengali-container">
             <span className="english-arrow">

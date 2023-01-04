@@ -1,16 +1,12 @@
 .get-your {
     background-color: #00AF9E;
-    margin: 0 40px;
+    margin: 0 20px;
     margin-top: 1rem;
+    padding: 20px 0;
     border-radius: 8px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    min-height: 80px;
-}
-
-.get-your h4{
-    padding-top: 20px;
 }
 
 .get-your h4 {
@@ -89,6 +85,5 @@
         top: 3px;
         right: 2.5rem;
     }
-
 
 }

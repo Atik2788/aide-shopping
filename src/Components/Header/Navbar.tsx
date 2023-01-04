@@ -12,12 +12,12 @@ const Navbar = () => {
       
       <div className="nav-logo">
       <img  src={logo} alt="" />
-        <p>aide</p>
+        <p className="margin-bottom-zero">aide</p>
       </div>
 
       <div className="nav-location">
-        <p className="nav-deli">Delivery to:</p>
-        <p className="nav-loca-img">
+        <p className="nav-deli margin-bottom-zero">Delivery to:</p>
+        <p className="nav-loca-img margin-bottom-zero">
             <img src={loca} alt="" />
              Current Location
              <span className="nav-loca-address">Mirpur 1 Bus Stand, Dhaka <span><RiArrowDownSLine /></span></span>
