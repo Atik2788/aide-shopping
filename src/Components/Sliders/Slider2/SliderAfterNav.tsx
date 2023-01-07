@@ -5,9 +5,9 @@ import slider3 from '../../../assets/bg3.jpg'
 import ads from '../../../assets/bg-right.png'
 
 
+// Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";

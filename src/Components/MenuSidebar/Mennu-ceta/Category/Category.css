@@ -1,0 +1,30 @@
+.category-details{
+    padding: 10px;
+}
+.category-details h3{
+    color:#3aacac;
+}
+
+.category-btn-details{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.category-btn-details p{
+    background-color: white;
+    border: 1px solid #3aacac;
+    color: #3aacac;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 0;
+}
+
+.category-btn-details p:hover{
+    background-color: #3aacac;
+    color: white;
+}

@@ -1,0 +1,11 @@
+.sidebar-cate-menu{
+    /* position: relative; */
+   align-items: flex-end;
+    display: flex;
+}
+
+.menuIcon2{
+    position: absolute;
+    top: 130px;
+    right: -29px;
+}

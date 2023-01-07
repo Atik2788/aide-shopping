@@ -22,6 +22,7 @@ const HomePagePro = () => {
 
 
             <div className='products-div'>
+                {/* <img src="" alt="" /> */}
 
 
             {

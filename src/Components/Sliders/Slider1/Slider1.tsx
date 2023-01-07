@@ -1,59 +1,90 @@
-import React, { useEffect, useState } from 'react';
-import imgSlider from './Data';
+import React from 'react';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css/navigation";
+import "swiper/css";
+
+
+import { Autoplay, Navigation } from "swiper";
+
+
+
+
+import bgImg from '../../../assets/bg-right.png'
+
+const imgList = [
+  {
+    img: bgImg
+  },
+  {
+    img: bgImg
+  },
+  {
+    img: bgImg
+  },
+  {
+    img: bgImg
+  },
+  {
+    img: bgImg
+  },
+  {
+    img: bgImg
+  },
+  {
+    img: bgImg
+  },
+  {
+    img: bgImg
+  }
+]
 
 const Slider1 = () => {
 
+  return (
+    <div>
+      <Swiper
 
-    const [currentState, setCurrentState] = useState(0)
+        breakpoints={{
+          576: {
+          slidesPerView: 2,
+          },
+          768: {
+          slidesPerView: 3,
+          },
+          992: {
+          slidesPerView: 5,
+          },
+        }}
+        slidesPerView={5}
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            if (currentState === 2) {
-                setCurrentState(0)
-            }
-            else {
-                setCurrentState(currentState + 1)
-            }
-        }, 5000)
-        return () => clearTimeout(timer)
-
-    }, [currentState])
-
-    const bgImgStyle = {
-        backgroundImage: `url(${imgSlider[currentState].url})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        height: '100%',
-    }
-
-    const goToNext = (currentState:number) => {
-        setCurrentState(currentState)
-    }
-
-
-    return (
-        <div className="bgslide">
-            <div className="container-style">
-                <div style={bgImgStyle}>
-                    <div className='trans-bg'></div>
-                    <div className='description text-center'>
-                    <div className='text-white lg:mt-20'>
-                        <h1 className='text-5xl font-bold mb-2'>{imgSlider[currentState].title}</h1>
-                        <p className='text-xl mb-10'>{imgSlider[currentState].body}</p>
-                    </div>
-
-                    <div className='carousel-ind lg:mt-60 mt-72'>
-                        {
-                            imgSlider.map((imgSlider, currentState) => (
-                                <span key={currentState} onClick={() => goToNext(currentState)}></span>
-                            ))
-                        }
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+                spaceBetween={13}
+                // centeredSlides={true}
+                // effect={"fade"}
+                autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+                }}
+                // pagination={{
+                // clickable: true,
+                // }}
+                loop={true}
+                speed={200}
+                navigation={true}
+                modules={[Autoplay, Navigation]}
+                className="slider-parent"
+            >
+                {
+                    imgList.map((slide: any, i) => (
+                        <SwiperSlide key={i}>
+                            <img src={slide.img} alt="" />
+                        </SwiperSlide>
+                    ))
+                }
+            </Swiper>
+          </div>
+  );
 };
 
 export default Slider1;
